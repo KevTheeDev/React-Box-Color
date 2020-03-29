@@ -18,7 +18,6 @@ constructor(props){
     // color: ['blue', 'pink', 'red', 'purple'],
     // document.classID(refere the div)[ref the index/ it was a 0]... this.state.color[reference the array]
     
-
   }
 }
 
@@ -35,12 +34,7 @@ onChange = (e) =>{
                 console.log("click counter ===>", this.state.clickCounter)
 }
 
-onChangeToNextColor = (e) =>{
-  //set state to something else
-  this.setState({color: 'pink',
-                clickCounter: this.state.clickCounter++ })
-                console.log("click counter ===>", this.state.clickCounter)
-}
+onChangeToNextColor = (e) =>{}
 
   render() {
     return (
