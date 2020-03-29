@@ -4,7 +4,6 @@ import './App.css';
 const brownColor = 'brown';
 const blueColor = 'blue';
 
-
 export default class App extends Component{
 
 constructor(props){
@@ -37,8 +36,6 @@ onChange = (e) =>{
                 this.setState({ color: onChangeToNextColor})
                 console.log("click counter ===>", this.state.clickCounter)
 }
-
-onChangeToNextColor = (e) =>{}
 
 render() {
   return (
