@@ -25,7 +25,7 @@ constructor(props){
 onChange = (e) =>{
   //set state to something else
   // setState is a component lifetsyle method
-  this.setState({color: 'orange',
+  this.setState({
                 // make a click counter and call the state
                 // may need to change "++" to "+ 1"
                 // ++ mutates states directly, so it won't work
@@ -33,7 +33,10 @@ onChange = (e) =>{
                 clickCounter: this.state.clickCounter + 1 })
                 // ADD if statement (see if that works)
                 // added turnery statement
+                // statement makes a new variable, sets variable up a turnery statement to hardcode the changing of the colors back and forward if the condition of a blue box is met
                 const onChangeToNextColor = this.state.color === blueColor ? brownColor : blueColor;
+                // new setState makes a key, value pair for the previously declared variable
+                // new onChangeToNextColor is set to color
                 this.setState({ color: onChangeToNextColor})
                 console.log("click counter ===>", this.state.clickCounter)
 }
