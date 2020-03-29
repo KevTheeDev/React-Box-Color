@@ -23,7 +23,8 @@ constructor(props){
 
 onChange = (e) =>{
   //set state to something else
-  this.setState({color: 'orange',
+  // setState is a component lifetsyle method
+  this.setState({color: ['orange', 'blue'],
                 // make a click counter and call the state
                 // may need to change "++" to "+ 1"
                 // ++ mutates states directly
@@ -31,6 +32,9 @@ onChange = (e) =>{
                 clickCounter: this.state.clickCounter + 1 })
                 // if
                 // ADD if statement (see if that works)
+                if(this.state.color[0]){
+                  this.setState({ color: 'blue'})
+                }
                 console.log("click counter ===>", this.state.clickCounter)
 }
 
