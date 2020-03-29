@@ -36,17 +36,17 @@ onChange = (e) =>{
 
 onChangeToNextColor = (e) =>{}
 
-  render() {
-    return (
-      //app is parent container
-      <div className="App">
-        <h1>Box Color Change. </h1>
-        <div className="colorBox" style={{backgroundColor: this.state.color}}
-          onClick={this.onChange}>
-          <p>Click Here</p>
-        </div>
+render() {
+  return (
+    //app is parent container
+    <div className="App">
+      <h1>Box Color Change. </h1>
+      {/* onClick triggers the onChange function */}
+      <div className="colorBox" style={{backgroundColor: this.state.color}} onClick={this.onChange}>
+        <p>Click Here</p>
       </div>
+    </div>
 
-    )
-  }
+  )
+}
 }
