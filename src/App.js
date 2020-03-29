@@ -32,6 +32,7 @@ onChange = (e) =>{
                 // .bind to recognize ".this"
                 clickCounter: this.state.clickCounter + 1 })
                 // ADD if statement (see if that works)
+                // added turnery statement
                 const onChangeToNextColor = this.state.color === blueColor ? brownColor : blueColor;
                 this.setState({ color: onChangeToNextColor})
                 console.log("click counter ===>", this.state.clickCounter)
